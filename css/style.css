@@ -391,7 +391,6 @@ body {
 @media screen and (max-width: 768px) {
   .header__list {
     position: absolute;
-    top: 65px;
     left: 0;
     height: calc(100dvh - 65px);
     background: #EEEFF1;
