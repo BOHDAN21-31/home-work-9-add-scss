@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+.offer {
+  background: $bg-accent;
+  padding-bottom: 141px;
+  padding-top: 257px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 48px;
+    margin: 0 0 60px;
+  }
+
+  &__description {
+    max-width: 540px;
+    margin: 0 0 60px;
+    color: var($text-secondary);
+  }
+
+  @include respond-to(md) {
+    .offer {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    &__title,
+    &__description {
+      margin-bottom: 20px;
+    }
+  }
+}

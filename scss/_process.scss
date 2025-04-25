@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixins";
+.process_blue,
+.process_blue1 {
+  background: $color-accent;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 50px;
+
+  @include respond-to(md) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &1 {
+    background: var($color-accent);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 0;
+    color: var($color-white);
+  }
+}
+
+.rider {
+  display: flex;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 40px;
+  max-width: 60px;
+  color: $color-white;
+
+  @include respond-to(md) {
+    padding: 10px 60px 1px 10px;
+
+  }
+}
+
+.riders {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px;
+  color: $color-white;
+}
+
+.imagenis {
+  padding-right: 15px;
+}
